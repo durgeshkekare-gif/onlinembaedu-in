@@ -50,19 +50,20 @@
 .sb-links a::after{content:"→";color:var(--coral);}
 @media(max-width:960px){.uni-hero-inner,.uni-body{grid-template-columns:1fr;}.sidebar-sticky{position:static;}}
 </style>
+
 <style>
-.cmp-wrap{border-radius:8px;overflow:hidden;border:1px solid var(--border);margin-top:0.875rem;}
-.cmp-tbl{width:100%;border-collapse:collapse;font-size:0.74rem;table-layout:fixed;}
-.cmp-tbl th{background:var(--teal);color:var(--white);padding:0.45rem 0.5rem;font-weight:600;font-size:0.68rem;text-align:left;}
-.cmp-tbl td{padding:0.42rem 0.5rem;border-bottom:1px solid var(--border);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-.cmp-tbl tr.cur td{background:rgba(232,84,42,0.07);font-weight:600;}
-.cmp-tbl tr:last-child td{border-bottom:none;}
-.cmp-tbl tr:not(.cur):hover td{background:var(--off-white);}
-.cmp-tbl th:nth-child(1),.cmp-tbl td:nth-child(1){width:36%;}
-.cmp-tbl th:nth-child(2),.cmp-tbl td:nth-child(2){width:18%;}
-.cmp-tbl th:nth-child(3),.cmp-tbl td:nth-child(3){width:18%;}
-.cmp-tbl th:nth-child(4),.cmp-tbl td:nth-child(4){width:12%;}
-.cmp-tbl th:nth-child(5),.cmp-tbl td:nth-child(5){width:16%;}
+.cmp-outer{margin-top:0.875rem;border-radius:8px;overflow:hidden;border:1px solid #D4E4E8;}
+.cmp-t{width:100%;border-collapse:collapse;table-layout:fixed;}
+.cmp-t th{background:#0D4F5C;color:#fff;padding:0.4rem 0.35rem;font-size:0.65rem;font-weight:700;text-align:left;white-space:nowrap;overflow:hidden;}
+.cmp-t td{padding:0.38rem 0.35rem;border-bottom:1px solid #D4E4E8;font-size:0.72rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.cmp-t tr:last-child td{border-bottom:none;}
+.cmp-t tr.cmp-cur td{background:rgba(232,84,42,0.07);}
+.cmp-t tr:not(.cmp-cur):hover td{background:#F7F9FA;}
+.cmp-t th:nth-child(1),.cmp-t td:nth-child(1){width:34%;}
+.cmp-t th:nth-child(2),.cmp-t td:nth-child(2){width:20%;text-align:right;padding-right:0.5rem;}
+.cmp-t th:nth-child(3),.cmp-t td:nth-child(3){width:18%;text-align:center;}
+.cmp-t th:nth-child(4),.cmp-t td:nth-child(4){width:12%;text-align:center;}
+.cmp-t th:nth-child(5),.cmp-t td:nth-child(5){width:16%;text-align:right;padding-right:0.4rem;}
 </style>
 </head>
 <body>
@@ -159,11 +160,10 @@
     </div>
     <div class="sb-card">
       <h3>Compare with others</h3>
-      <div class="cmp-wrap"><table class="cmp-tbl">
-    <thead><tr><th>University</th><th>Fee</th><th>NAAC</th><th>WES</th><th>Specs</th></tr></thead>
-    <tbody><tr class="cur"><td><span style="color:var(--coral);">&#9679; DSU</span></td><td style="font-weight:700;">&#8377;2.25L</td><td style="font-size:0.68rem;">A</td><td style="color:#aaa;">—</td><td>12</td></tr><tr><td><a href="/universities/manipal/" style="color:var(--teal);font-weight:500;text-decoration:none;">Manipal MUJ</a></td><td style="font-weight:700;">&#8377;1.8L</td><td style="font-size:0.68rem;">A++</td><td style="color:var(--success);font-weight:700;">✓</td><td>13</td></tr><tr><td><a href="/universities/amrita/" style="color:var(--teal);font-weight:500;text-decoration:none;">Amrita</a></td><td style="font-weight:700;">&#8377;1.7L</td><td style="font-size:0.68rem;">A++</td><td style="color:var(--success);font-weight:700;">✓</td><td>4</td></tr><tr><td><a href="/universities/chandigarh/" style="color:var(--teal);font-weight:500;text-decoration:none;">Chandigarh</a></td><td style="color:var(--coral);font-weight:700;">&#8377;1.1L</td><td style="font-size:0.68rem;">A+</td><td style="color:#aaa;">—</td><td style="color:var(--coral);font-weight:700;">26</td></tr><tr><td><a href="/universities/lpu/" style="color:var(--teal);font-weight:500;text-decoration:none;">LPU</a></td><td style="font-weight:700;">&#8377;1.4L</td><td style="font-size:0.68rem;">A++</td><td style="color:#aaa;">—</td><td>7</td></tr><tr><td><a href="/universities/amity/" style="color:var(--teal);font-weight:500;text-decoration:none;">Amity</a></td><td style="font-weight:700;">&#8377;1.5L</td><td style="font-size:0.68rem;">A+</td><td style="color:#aaa;">—</td><td>18</td></tr><tr><td><a href="/universities/jain/" style="color:var(--teal);font-weight:500;text-decoration:none;">Jain</a></td><td style="font-weight:700;">&#8377;1.4L</td><td style="font-size:0.68rem;">A+++</td><td style="color:#aaa;">—</td><td style="color:var(--coral);font-weight:700;">22</td></tr><tr><td><a href="/universities/symbiosis/" style="color:var(--teal);font-weight:500;text-decoration:none;">Symbiosis</a></td><td style="font-weight:700;">&#8377;3.7L</td><td style="font-size:0.68rem;">A++</td><td style="color:#aaa;">—</td><td>9</td></tr><tr><td><a href="/universities/dypatil/" style="color:var(--teal);font-weight:500;text-decoration:none;">DY Patil</a></td><td style="font-weight:700;">&#8377;1.2L</td><td style="font-size:0.68rem;">A+</td><td style="color:#aaa;">—</td><td>15</td></tr><tr><td><a href="/universities/liba/" style="color:var(--teal);font-weight:500;text-decoration:none;">LIBA</a></td><td style="font-weight:700;">&#8377;3.5L</td><td style="font-size:0.68rem;">AACSB</td><td style="color:var(--success);font-weight:700;">AIU</td><td>6</td></tr><tr><td><a href="/universities/bvdu/" style="color:var(--teal);font-weight:500;text-decoration:none;">BVDU</a></td><td style="font-weight:700;">&#8377;1.76L</td><td style="font-size:0.68rem;">A</td><td style="color:#aaa;">—</td><td>14</td></tr></tbody>
-  </table></div>
-  <a href="/compare.html" style="display:block;text-align:center;margin-top:0.6rem;font-size:0.75rem;font-weight:600;color:var(--teal);">Full comparison &#8594;</a>
+      <div class="cmp-outer"><table class="cmp-t">
+<thead><tr><th>University</th><th style="text-align:right;">Fee</th><th style="text-align:center;">NAAC</th><th style="text-align:center;">WES</th><th style="text-align:right;">Specs</th></tr></thead>
+<tbody><tr class="cmp-cur"><td><b style="color:#E8542A;">&#9679; DSU</b></td><td style="font-weight:600;">&#8377;2.25L</td><td style="font-size:0.66rem;">A</td><td style="color:#aaa;">&#8212;</td><td>12</td></tr><tr><td><a href="/universities/manipal/" style="color:#0D4F5C;text-decoration:none;">Manipal MUJ</a></td><td style="font-weight:600;">&#8377;1.8L</td><td style="font-size:0.66rem;">A++</td><td style="color:#1A7A5E;font-weight:700;">&#10003;</td><td>13</td></tr><tr><td><a href="/universities/amrita/" style="color:#0D4F5C;text-decoration:none;">Amrita</a></td><td style="font-weight:600;">&#8377;1.7L</td><td style="font-size:0.66rem;">A++</td><td style="color:#1A7A5E;font-weight:700;">&#10003;</td><td>4</td></tr><tr><td><a href="/universities/chandigarh/" style="color:#0D4F5C;text-decoration:none;">Chandigarh</a></td><td style="color:#E8542A;font-weight:700;">&#8377;1.1L</td><td style="font-size:0.66rem;">A+</td><td style="color:#aaa;">&#8212;</td><td style="color:#E8542A;font-weight:700;">26</td></tr><tr><td><a href="/universities/lpu/" style="color:#0D4F5C;text-decoration:none;">LPU</a></td><td style="font-weight:600;">&#8377;1.4L</td><td style="font-size:0.66rem;">A++</td><td style="color:#aaa;">&#8212;</td><td>7</td></tr><tr><td><a href="/universities/amity/" style="color:#0D4F5C;text-decoration:none;">Amity</a></td><td style="font-weight:600;">&#8377;1.5L</td><td style="font-size:0.66rem;">A+</td><td style="color:#aaa;">&#8212;</td><td>18</td></tr><tr><td><a href="/universities/jain/" style="color:#0D4F5C;text-decoration:none;">Jain</a></td><td style="font-weight:600;">&#8377;1.4L</td><td style="font-size:0.66rem;">A+++</td><td style="color:#aaa;">&#8212;</td><td style="color:#E8542A;font-weight:700;">22</td></tr><tr><td><a href="/universities/symbiosis/" style="color:#0D4F5C;text-decoration:none;">Symbiosis</a></td><td style="font-weight:600;">&#8377;3.7L</td><td style="font-size:0.66rem;">A++</td><td style="color:#aaa;">&#8212;</td><td>9</td></tr><tr><td><a href="/universities/dypatil/" style="color:#0D4F5C;text-decoration:none;">DY Patil</a></td><td style="font-weight:600;">&#8377;1.2L</td><td style="font-size:0.66rem;">A+</td><td style="color:#aaa;">&#8212;</td><td>15</td></tr><tr><td><a href="/universities/liba/" style="color:#0D4F5C;text-decoration:none;">LIBA</a></td><td style="font-weight:600;">&#8377;3.5L</td><td style="font-size:0.66rem;">AACSB</td><td style="color:#1A7A5E;font-weight:700;">&#10003;</td><td>6</td></tr><tr><td><a href="/universities/bvdu/" style="color:#0D4F5C;text-decoration:none;">BVDU</a></td><td style="font-weight:600;">&#8377;1.76L</td><td style="font-size:0.66rem;">A</td><td style="color:#aaa;">&#8212;</td><td>14</td></tr></tbody></table></div>
+<a href="/compare.html" style="display:block;text-align:center;margin-top:0.6rem;font-size:0.75rem;font-weight:600;color:#0D4F5C;">Full comparison &#8594;</a>
     </div>
     <div class="sb-card" style="background:var(--teal);border:none;">
       <h3 style="color:var(--white);">Free counselling</h3>
