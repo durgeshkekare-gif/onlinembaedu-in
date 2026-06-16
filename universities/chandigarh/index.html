@@ -147,7 +147,16 @@
       <h3>Compare with others</h3>
       <style>
 .compare-inline{margin-top:0;}
-.cmp-table{width:100%;border-collapse:collapse;font-size:0.78rem;}
+.cmp-table{width:100%;border-collapse:collapse;font-size:0.72rem;table-layout:fixed;}
+.cmp-table th{background:var(--teal);color:var(--white);padding:0.4rem 0.5rem;text-align:left;font-weight:600;white-space:nowrap;overflow:hidden;}
+.cmp-table td{padding:0.4rem 0.5rem;border-bottom:1px solid var(--border);vertical-align:middle;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.cmp-table th:nth-child(1){width:28%;}
+.cmp-table th:nth-child(2){width:12%;}
+.cmp-table th:nth-child(3){width:13%;}
+.cmp-table th:nth-child(4){width:13%;}
+.cmp-table th:nth-child(5){width:10%;}
+.cmp-table th:nth-child(6){width:10%;}
+.cmp-table th:nth-child(7){width:14%;}
 .cmp-table th{background:var(--teal);color:var(--white);padding:0.55rem 0.75rem;text-align:left;font-weight:600;white-space:nowrap;}
 .cmp-table td{padding:0.55rem 0.75rem;border-bottom:1px solid var(--border);vertical-align:middle;}
 .cmp-table tr.current-row td{background:rgba(232,84,42,0.06);font-weight:600;}
@@ -158,12 +167,12 @@
 .cmp-uni-link{color:var(--teal);text-decoration:none;font-weight:600;}
 .cmp-uni-link:hover{color:var(--coral);}
 .cmp-current{font-weight:700;color:var(--coral);}
-.cmp-wrap{overflow-x:auto;border-radius:var(--radius);border:1px solid var(--border);margin-top:1rem;}
+.cmp-wrap{border-radius:var(--radius);border:1px solid var(--border);margin-top:1rem;}
 </style>
 <div class="cmp-wrap">
   <table class="cmp-table">
     <thead><tr><th>University</th><th>Fee</th><th>Duration</th><th>NAAC</th><th>WES</th><th>Specs</th><th>Format</th></tr></thead>
-    <tbody><tr class="current-row"><td><span class="cmp-current">● Chandigarh University (this)</span></td><td class="best">₹1.1L</td><td>24 mo</td><td>A+</td><td>No</td><td>8</td><td>Online</td></tr><tr><td><a href="/universities/manipal/" class="cmp-uni-link">Manipal MUJ</a></td><td class="fee-col">₹1.8L</td><td>24 mo</td><td>A++</td><td class="wes-yes">Yes</td><td>13</td><td>Online</td></tr><tr><td><a href="/universities/amrita/" class="cmp-uni-link">Amrita Vishwa</a></td><td class="fee-col">₹1.7L</td><td>24 mo</td><td>A++</td><td class="wes-yes">Yes</td><td>5</td><td>Online</td></tr><tr><td><a href="/universities/lpu/" class="cmp-uni-link">LPU</a></td><td class="fee-col">₹1.4L</td><td>24 mo</td><td>A++</td><td>No</td><td>7</td><td>Online</td></tr><tr><td><a href="/universities/amity/" class="cmp-uni-link">Amity Online</a></td><td class="fee-col">₹1.5L</td><td>24 mo</td><td>A+</td><td>No</td><td>10+</td><td>Online</td></tr><tr><td><a href="/universities/jain/" class="cmp-uni-link">Jain University</a></td><td class="fee-col">₹1.4L</td><td>24 mo</td><td>A+++</td><td>No</td><td class="best">26</td><td>Online</td></tr><tr><td><a href="/universities/symbiosis/" class="cmp-uni-link">Symbiosis SSODL</a></td><td class="fee-col">₹1.2L</td><td>24 mo</td><td>A++</td><td>No</td><td>5</td><td>Online</td></tr><tr><td><a href="/universities/dypatil/" class="cmp-uni-link">DY Patil (DPU)</a></td><td class="fee-col">₹1.2L</td><td>24 mo</td><td>A+</td><td>No</td><td>6</td><td>Online</td></tr><tr><td><a href="/universities/liba/" class="cmp-uni-link">LIBA</a></td><td class="fee-col">₹3.5L</td><td>24 mo</td><td>AACSB</td><td class="wes-yes">AIU</td><td>6</td><td>Online</td></tr><tr><td><a href="/universities/dsu/" class="cmp-uni-link">DSU (Exec MBA)</a></td><td class="fee-col">₹2.25L</td><td>17 mo</td><td>A</td><td>No</td><td>11</td><td>Blended</td></tr><tr><td><a href="/universities/bvdu/" class="cmp-uni-link">BVDU</a></td><td class="fee-col">₹1.76L</td><td>24 mo</td><td>A</td><td>No</td><td>7</td><td>Online</td></tr></tbody>
+    <tbody><tr class="current-row"><td><span class="cmp-current">● Chandigarh University (this)</span></td><td class="best">₹1.1L</td><td>24 mo</td><td>A+</td><td>No</td><td>8</td><td>Online</td></tr><tr><td><a href="/universities/manipal/" class="cmp-uni-link">Manipal MUJ</a></td><td class="fee-col">₹1.8L</td><td>24 mo</td><td>A++</td><td class="wes-yes">Yes</td><td>13</td><td>Online</td></tr><tr><td><a href="/universities/amrita/" class="cmp-uni-link">Amrita Vishwa</a></td><td class="fee-col">₹1.7L</td><td>24 mo</td><td>A++</td><td class="wes-yes">Yes</td><td>5</td><td>Online</td></tr><tr><td><a href="/universities/lpu/" class="cmp-uni-link">LPU</a></td><td class="fee-col">₹1.4L</td><td>24 mo</td><td>A++</td><td>No</td><td>7</td><td>Online</td></tr><tr><td><a href="/universities/amity/" class="cmp-uni-link">Amity Online</a></td><td class="fee-col">₹1.5L</td><td>24 mo</td><td>A+</td><td>No</td><td>10+</td><td>Online</td></tr><tr><td><a href="/universities/jain/" class="cmp-uni-link">Jain University</a></td><td class="fee-col">₹1.4L</td><td>24 mo</td><td>A+++</td><td>No</td><td class="best">26</td><td>Online</td></tr><tr><td><a href="/universities/symbiosis/" class="cmp-uni-link">Symbiosis SSODL</a></td><td class="fee-col">₹3.7L</td><td>24 mo</td><td>A++</td><td>No</td><td>5</td><td>Online</td></tr><tr><td><a href="/universities/dypatil/" class="cmp-uni-link">DY Patil (DPU)</a></td><td class="fee-col">₹1.2L</td><td>24 mo</td><td>A+</td><td>No</td><td>6</td><td>Online</td></tr><tr><td><a href="/universities/liba/" class="cmp-uni-link">LIBA</a></td><td class="fee-col">₹3.5L</td><td>24 mo</td><td>AACSB</td><td class="wes-yes">AIU</td><td>6</td><td>Online</td></tr><tr><td><a href="/universities/dsu/" class="cmp-uni-link">DSU (Exec MBA)</a></td><td class="fee-col">₹2.25L</td><td>17 mo</td><td>A</td><td>No</td><td>11</td><td>Blended</td></tr><tr><td><a href="/universities/bvdu/" class="cmp-uni-link">BVDU</a></td><td class="fee-col">₹1.76L</td><td>24 mo</td><td>A</td><td>No</td><td>7</td><td>Online</td></tr></tbody>
   </table>
 </div>
 <a href="/compare.html" style="display:block;text-align:center;margin-top:0.75rem;font-size:0.78rem;font-weight:600;color:var(--teal);">Full comparison with verdict cards &rarr;</a>
