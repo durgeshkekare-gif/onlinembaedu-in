@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Online MBA Eligibility Check India 2026 | onlinembaedu.in</title>
+<meta name="description" content="Check your eligibility for online MBA in India. Answer 3 questions and get matched to the right university in seconds. Free, instant, no obligation.">
+<link rel="canonical" href="https://onlinembaedu.in/eligibility.html">
+<meta property="og:title" content="Online MBA Eligibility Check India 2026 | onlinembaedu.in">
+<meta property="og:description" content="Check eligibility for online MBA — answer 3 questions and get matched instantly.">
+<meta property="og:type" content="website"><meta property="og:url" content="https://onlinembaedu.in/eligibility.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css">
+<style>
+.elig-wrap{max-width:760px;margin:0 auto;padding:56px 5%;}
+.elig-card{background:var(--white);border-radius:var(--radius-lg);border:1px solid var(--border);padding:2.5rem;box-shadow:var(--shadow-sm);}
+.progress-bar{height:4px;background:var(--border);border-radius:2px;margin-bottom:2rem;}
+.progress-fill{height:4px;background:var(--coral);border-radius:2px;transition:width 0.3s;}
+.q-label{font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--coral);margin-bottom:0.875rem;}
+.q-text{font-size:1.15rem;font-weight:700;color:var(--teal);margin-bottom:1.5rem;line-height:1.4;}
+.options-grid{display:flex;flex-direction:column;gap:0.6rem;}
+.opt-btn{padding:0.875rem 1.25rem;border:1.5px solid var(--border);border-radius:10px;font-size:0.9rem;color:var(--text);cursor:pointer;transition:all 0.2s;text-align:left;background:var(--white);font-family:var(--font-body);display:flex;align-items:center;gap:0.75rem;}
+.opt-btn:hover,.opt-btn.selected{border-color:var(--teal);background:var(--teal-pale);color:var(--teal);font-weight:600;}
+.opt-icon{font-size:1.25rem;flex-shrink:0;}
+.result-state{display:none;text-align:center;padding:1rem 0;}
+.result-badge{display:inline-block;background:var(--coral);color:var(--white);padding:0.4rem 1.25rem;border-radius:20px;font-size:0.8rem;font-weight:700;margin-bottom:1.5rem;}
+.result-uni{font-size:1.5rem;font-weight:800;color:var(--teal);margin-bottom:0.5rem;}
+.result-sub{font-size:0.875rem;color:var(--text-muted);margin-bottom:0.5rem;}
+.result-fee{font-size:1.1rem;font-weight:700;color:var(--coral);margin-bottom:1.5rem;}
+.result-others{background:var(--off-white);border-radius:var(--radius);padding:1.25rem;margin:1.25rem 0;text-align:left;}
+.result-others h4{font-size:0.82rem;font-weight:700;color:var(--teal);margin-bottom:0.75rem;}
+.ro-item{display:flex;justify-content:space-between;font-size:0.82rem;padding:0.4rem 0;border-bottom:1px solid var(--border);}
+.ro-item:last-child{border-bottom:none;}
+.elig-table{width:100%;border-collapse:collapse;margin:2rem 0;font-size:0.83rem;}
+.elig-table th{background:var(--teal);color:var(--white);padding:0.75rem 1rem;text-align:left;font-weight:600;}
+.elig-table td{padding:0.75rem 1rem;border-bottom:1px solid var(--border);}
+.elig-table tr:nth-child(even) td{background:var(--off-white);}
+.yes{color:var(--success);font-weight:600;}
+.no{color:var(--text-muted);}
+</style>
+</head>
+<body>
+<nav class="site-nav">
+  <a href="/" class="nav-logo">online<span>mba</span><em>edu</em>.in</a>
+  <ul class="nav-links">
+    <li><a href="/universities/">Universities</a></li>
+    <li><a href="/specialisations/">Specialisations</a></li>
+    <li><a href="/compare.html" >Compare</a></li>
+    <li><a href="/eligibility.html" class='active'>Eligibility</a></li>
+    <li><a href="/guide.html" >Guide</a></li>
+    <li><a href="/blog/" >Blog</a></li>
+  </ul>
+  <a href="/apply.html" class="nav-cta">Free counselling</a>
+  <button class="nav-hamburger" aria-label="Open menu">&#9776;</button>
+</nav>
+<div class="page-hero center">
+  <div class="eyebrow">Eligibility checker · instant</div>
+  <h1 class="page-title">Am I eligible for an online MBA?</h1>
+  <p class="page-sub">Answer 3 quick questions — get matched to the right university in under 60 seconds.</p>
+</div>
+
+<div class="elig-wrap">
+  <div class="elig-card">
+    <div class="progress-bar"><div class="progress-fill" id="prog" style="width:0%"></div></div>
+    
+    <div id="q1">
+      <div class="q-label">Question 1 of 3</div>
+      <div class="q-text">What is your highest qualification?</div>
+      <div class="options-grid">
+        <button class="opt-btn" onclick="answer(1,'grad',this)"><span class="opt-icon">🎓</span> Bachelor's degree (any stream)</button>
+        <button class="opt-btn" onclick="answer(1,'pg',this)"><span class="opt-icon">🏆</span> Postgraduate degree / MBA already</button>
+        <button class="opt-btn" onclick="answer(1,'diploma',this)"><span class="opt-icon">📋</span> Diploma / pursuing degree</button>
+        <button class="opt-btn" onclick="answer(1,'ca',this)"><span class="opt-icon">💼</span> CA / CMA / CS professional</button>
+      </div>
+    </div>
+
+    <div id="q2" style="display:none">
+      <div class="q-label">Question 2 of 3</div>
+      <div class="q-text">What is your primary goal from this MBA?</div>
+      <div class="options-grid">
+        <button class="opt-btn" onclick="answer(2,'salary',this)"><span class="opt-icon">📈</span> Higher salary &amp; promotion</button>
+        <button class="opt-btn" onclick="answer(2,'switch',this)"><span class="opt-icon">🔄</span> Switch industry or function</button>
+        <button class="opt-btn" onclick="answer(2,'global',this)"><span class="opt-icon">🌍</span> International career (USA/Canada)</button>
+        <button class="opt-btn" onclick="answer(2,'credential',this)"><span class="opt-icon">📜</span> Just need a UGC degree credential</button>
+      </div>
+    </div>
+
+    <div id="q3" style="display:none">
+      <div class="q-label">Question 3 of 3</div>
+      <div class="q-text">What is your budget for the program?</div>
+      <div class="options-grid">
+        <button class="opt-btn" onclick="answer(3,'low',this)"><span class="opt-icon">💰</span> Under ₹1.5L (minimum cost)</button>
+        <button class="opt-btn" onclick="answer(3,'mid',this)"><span class="opt-icon">💳</span> ₹1.5L – ₹2.5L</button>
+        <button class="opt-btn" onclick="answer(3,'high',this)"><span class="opt-icon">🏦</span> ₹2.5L – ₹4L (premium)</button>
+        <button class="opt-btn" onclick="answer(3,'any',this)"><span class="opt-icon">✅</span> Budget not a constraint</button>
+      </div>
+    </div>
+
+    <div id="result" class="result-state">
+      <div class="result-badge">Your best match ✓</div>
+      <div class="result-uni" id="res-uni"></div>
+      <div class="result-sub" id="res-sub"></div>
+      <div class="result-fee" id="res-fee"></div>
+      <div class="result-others" id="res-others"></div>
+      <a href="/apply.html" class="btn btn-coral btn-lg" style="width:100%;display:block;text-align:center;margin-bottom:0.875rem;">Get free admission counselling →</a>
+      <button onclick="resetQuiz()" style="background:none;border:none;color:var(--teal);cursor:pointer;font-size:0.82rem;font-weight:600;font-family:var(--font-body);">← Start over</button>
+    </div>
+  </div>
+
+  <h2 style="font-size:1.3rem;font-weight:700;color:var(--teal);margin:3rem 0 1rem;">Eligibility — all universities at a glance</h2>
+  <table class="elig-table">
+    <thead><tr><th>University</th><th>Min. qualification</th><th>Work experience</th><th>Entrance exam</th><th>Fresh graduates</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Manipal (MUJ)</strong></td><td>Any graduate</td><td>Not required</td><td>None</td><td class="yes">Yes ✓</td></tr>
+      <tr><td><strong>Amrita</strong></td><td>Any graduate</td><td>Not required</td><td>None</td><td class="yes">Yes ✓</td></tr>
+      <tr><td><strong>Chandigarh</strong></td><td>Any graduate</td><td>Not required</td><td>None</td><td class="yes">Yes ✓</td></tr>
+      <tr><td><strong>LPU</strong></td><td>Any graduate</td><td>Not required</td><td>None</td><td class="yes">Yes ✓</td></tr>
+      <tr><td><strong>Amity</strong></td><td>Any graduate</td><td>Not required</td><td>None</td><td class="yes">Yes ✓</td></tr>
+      <tr><td><strong>Jain University</strong></td><td>Any graduate</td><td>Not required</td><td>None</td><td class="yes">Yes ✓</td></tr>
+      <tr><td><strong>Symbiosis SSODL</strong></td><td>Any graduate</td><td>Not required</td><td>None</td><td class="yes">Yes ✓</td></tr>
+      <tr><td><strong>DY Patil</strong></td><td>Any graduate</td><td>Not required</td><td>None</td><td class="yes">Yes ✓</td></tr>
+      <tr><td><strong>LIBA</strong></td><td>Any graduate</td><td>2+ yrs preferred</td><td>None</td><td class="no">Preferred not fresh</td></tr>
+      <tr><td><strong>DSU (Exec MBA)</strong></td><td>Any graduate</td><td>3+ yrs preferred</td><td>None</td><td class="no">Working professionals</td></tr>
+      <tr><td><strong>BVDU</strong></td><td>Any graduate</td><td>Not required</td><td>None</td><td class="yes">Yes ✓</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-brand"><div class="footer-logo">online<span>mba</span>edu.in</div><p>India's most complete guide to UGC-approved online MBA programs.</p></div>
+    <div class="footer-col"><div class="footer-col-title">Universities</div><ul><li><a href="/universities/manipal/">Manipal MUJ</a></li><li><a href="/universities/amrita/">Amrita</a></li><li><a href="/universities/chandigarh/">Chandigarh</a></li><li><a href="/universities/lpu/">LPU</a></li><li><a href="/universities/amity/">Amity</a></li><li><a href="/universities/jain/">Jain</a></li><li><a href="/universities/symbiosis/">Symbiosis</a></li><li><a href="/universities/dypatil/">DY Patil</a></li><li><a href="/universities/liba/">LIBA</a></li><li><a href="/universities/dsu/">DSU</a></li><li><a href="/universities/bvdu/">BVDU</a></li></ul></div>
+    <div class="footer-col"><div class="footer-col-title">Tools</div><ul><li><a href="/compare.html">Compare</a></li><li><a href="/eligibility.html">Eligibility</a></li><li><a href="/guide.html">Guide</a></li><li><a href="/apply.html">Free counselling</a></li></ul></div>
+    <div class="footer-col"><div class="footer-col-title">Specialisations</div><ul><li><a href="/specialisations/finance/">Finance</a></li><li><a href="/specialisations/marketing/">Marketing</a></li><li><a href="/specialisations/hr/">HR</a></li><li><a href="/specialisations/analytics/">Analytics</a></li><li><a href="/specialisations/operations/">Operations</a></li><li><a href="/specialisations/fintech/">Fintech</a></li></ul></div>
+    <div class="footer-col"><div class="footer-col-title">Blog</div><ul><li><a href="/blog/">All articles</a></li><li><a href="/blog/best-online-mba-india-2026.html">Best online MBA 2026</a></li><li><a href="/blog/ugc-deb-online-mba-guide.html">UGC-DEB guide</a></li><li><a href="/blog/manipal-vs-amrita-online-mba.html">Manipal vs Amrita</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><div>&copy; 2026 onlinembaedu.in &middot; All rights reserved</div><div class="footer-bottom-links"><a href="/privacy.html">Privacy</a><a href="/disclaimer.html">Disclaimer</a><a href="/sitemap.html">Sitemap</a></div></div>
+</footer>
+<div class="sticky-mobile"><a href="tel:+918080089898" class="sm-call">&#128222; Call</a><a href="/apply.html" class="sm-apply">Free counselling &rarr;</a></div>
+<script src="/assets/main.js"></script>
+<script>
+var answers = {};
+function answer(q, val, btn) {
+  answers['q'+q] = val;
+  btn.classList.add('selected');
+  document.getElementById('prog').style.width = (q/3*100) + '%';
+  setTimeout(function() {
+    document.getElementById('q'+q).style.display = 'none';
+    if (q < 3) document.getElementById('q'+(q+1)).style.display = 'block';
+    else showResult();
+  }, 350);
+}
+function showResult() {
+  var goal = answers.q2, budget = answers.q3;
+  var match, sub, fee, others;
+  if (goal === 'global') {
+    match = 'Amrita Vishwa Vidyapeetham'; sub = 'NIRF #7 · NAAC A++ · WES recognised — valid in USA &amp; Canada · Study abroad option'; fee = '₹1.7L total fee · Zero-cost EMI';
+    others = [['Manipal MUJ','₹1.8L · WES recognised'],['LIBA','₹3.5L · AIU recognised']];
+  } else if (budget === 'low') {
+    match = 'Chandigarh University'; sub = 'NIRF #26 · NAAC A+ · Most affordable NIRF-ranked option'; fee = '₹1.1L total fee · EMI ₹4,600/mo';
+    others = [['Symbiosis SSODL','₹1.2L · NAAC A++ · AMBA'],['DY Patil DPU','₹1.2L · NAAC A+']];
+  } else if (budget === 'high') {
+    match = 'LIBA — Loyola Institute'; sub = 'AACSB accredited · India top 10 B-school · Dual specialisation'; fee = '₹3.5L · Scholarships up to ₹75K';
+    others = [['DSU Executive MBA','₹2.25L · Blended campus'],['Manipal MUJ','₹1.8L · NIRF #4']];
+  } else if (goal === 'credential') {
+    match = 'Chandigarh University'; sub = 'NIRF #26 · NAAC A+ · UGC degree at lowest cost'; fee = '₹1.1L total fee';
+    others = [['Symbiosis','₹1.2L · AMBA accredited'],['LPU','₹1.4L · NAAC A++']];
+  } else {
+    match = 'Manipal University Jaipur (MUJ)'; sub = 'NIRF #4 · NAAC A++ · 13 specialisations · WES recognised'; fee = '₹1.8L total fee · EMI ₹7,500/mo';
+    others = [['Amrita Vishwa','₹1.7L · NIRF #7'],['Amity Online','₹1.5L · 10+ specs']];
+  }
+  document.getElementById('res-uni').textContent = match;
+  document.getElementById('res-sub').textContent = sub;
+  document.getElementById('res-fee').textContent = fee;
+  var othHtml = '<h4>Also consider:</h4>';
+  others.forEach(function(o) { othHtml += '<div class="ro-item"><span>'+o[0]+'</span><span style="color:var(--coral);font-weight:600;">'+o[1]+'</span></div>'; });
+  document.getElementById('res-others').innerHTML = othHtml;
+  document.getElementById('prog').style.width = '100%';
+  document.getElementById('result').style.display = 'block';
+}
+function resetQuiz() {
+  answers = {};
+  for (var i=1;i<=3;i++) {
+    var el = document.getElementById('q'+i);
+    if(el) { el.style.display = i===1 ? 'block' : 'none'; el.querySelectorAll('.opt-btn').forEach(function(b){b.classList.remove('selected')}); }
+  }
+  document.getElementById('result').style.display = 'none';
+  document.getElementById('prog').style.width = '0%';
+}
+</script>
+</body>
+</html>
