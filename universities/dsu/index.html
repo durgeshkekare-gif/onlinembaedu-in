@@ -50,6 +50,20 @@
 .sb-links a::after{content:"→";color:var(--coral);}
 @media(max-width:960px){.uni-hero-inner,.uni-body{grid-template-columns:1fr;}.sidebar-sticky{position:static;}}
 </style>
+<style>
+.cmp-wrap{border-radius:8px;border:1px solid var(--border);margin-top:1rem;overflow:hidden;}
+.cmp-table{width:100%;border-collapse:collapse;font-size:0.72rem;table-layout:fixed;}
+.cmp-table th{background:var(--teal);color:var(--white);padding:0.5rem 0.6rem;text-align:left;font-weight:600;}
+.cmp-table td{padding:0.45rem 0.6rem;border-bottom:1px solid var(--border);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.cmp-table tr.current-row td{background:rgba(232,84,42,0.06);}
+.cmp-table tr:hover td{background:var(--off-white);}
+.cmp-table th:nth-child(1),.cmp-table td:nth-child(1){width:30%;}
+.cmp-table th:nth-child(2),.cmp-table td:nth-child(2){width:14%;}
+.cmp-table th:nth-child(3),.cmp-table td:nth-child(3){width:14%;}
+.cmp-table th:nth-child(4),.cmp-table td:nth-child(4){width:16%;}
+.cmp-table th:nth-child(5),.cmp-table td:nth-child(5){width:12%;}
+.cmp-table th:nth-child(6),.cmp-table td:nth-child(6){width:14%;}
+</style>
 </head>
 <body>
 <nav class="site-nav">
@@ -110,8 +124,8 @@
     <ul><li>Full UGC MBA degree — not just a certificate</li><li>Blended format — real campus experience without leaving your job</li><li>Bengaluru campus — tech city location, strong ecosystem access</li><li>11 specialisations available</li><li>17 months — fastest completion among programs here</li><li>Designed for 3+ years working professionals</li></ul>
 
     <h2>Specialisations available</h2>
-    <p>Choose from 11 specialisations — select the one that best matches your career goals and target industry.</p>
-    <div class="spec-wrap"><span class="tag">Finance</span><span class="tag">Marketing</span><span class="tag">HR</span><span class="tag">Operations</span><span class="tag">Business Analytics</span><span class="tag">IT Management</span><span class="tag">International Business</span><span class="tag">Digital Marketing</span><span class="tag">Healthcare Management</span><span class="tag">Supply Chain</span><span class="tag">Entrepreneurship</span></div>
+    <p>Choose from 12 specialisations — select the one that best matches your career goals and target industry.</p>
+    <div class="spec-wrap"><span class="tag">Human Resource Management</span><span class="tag">Marketing Management</span><span class="tag">Financial Management</span><span class="tag">Operations Management</span><span class="tag">Business Analytics</span><span class="tag">Global Business</span><span class="tag">Project Management</span><span class="tag">IT Management</span><span class="tag">Logistics & SCM</span><span class="tag">Entrepreneurship & Innovation</span><span class="tag">Product Management</span><span class="tag">AI for Business</span></div>
 
     <h2>Career outcomes</h2>
     <ul><li>Best option for working professionals wanting a real campus EMBA degree</li><li>Strong Bengaluru tech and startup sector placements</li><li>35–50% salary growth for tech and management professionals</li><li>Alumni at major Bengaluru IT and startup companies</li></ul>
@@ -145,34 +159,10 @@
     </div>
     <div class="sb-card">
       <h3>Compare with others</h3>
-      <style>
-.compare-inline{margin-top:0;}
-.cmp-table{width:100%;border-collapse:collapse;font-size:0.72rem;table-layout:fixed;}
-.cmp-table th{background:var(--teal);color:var(--white);padding:0.4rem 0.5rem;text-align:left;font-weight:600;white-space:nowrap;overflow:hidden;}
-.cmp-table td{padding:0.4rem 0.5rem;border-bottom:1px solid var(--border);vertical-align:middle;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
-.cmp-table th:nth-child(1){width:28%;}
-.cmp-table th:nth-child(2){width:12%;}
-.cmp-table th:nth-child(3){width:13%;}
-.cmp-table th:nth-child(4){width:13%;}
-.cmp-table th:nth-child(5){width:10%;}
-.cmp-table th:nth-child(6){width:10%;}
-.cmp-table th:nth-child(7){width:14%;}
-.cmp-table th{background:var(--teal);color:var(--white);padding:0.55rem 0.75rem;text-align:left;font-weight:600;white-space:nowrap;}
-.cmp-table td{padding:0.55rem 0.75rem;border-bottom:1px solid var(--border);vertical-align:middle;}
-.cmp-table tr.current-row td{background:rgba(232,84,42,0.06);font-weight:600;}
-.cmp-table tr:hover td{background:var(--off-white);}
-.cmp-table .fee-col{font-weight:700;color:var(--teal);}
-.cmp-table .best{color:var(--coral);font-weight:700;}
-.cmp-table .wes-yes{color:var(--success);font-weight:600;}
-.cmp-uni-link{color:var(--teal);text-decoration:none;font-weight:600;}
-.cmp-uni-link:hover{color:var(--coral);}
-.cmp-current{font-weight:700;color:var(--coral);}
-.cmp-wrap{border-radius:var(--radius);border:1px solid var(--border);margin-top:1rem;}
-</style>
-<div class="cmp-wrap">
+      <div class="cmp-wrap">
   <table class="cmp-table">
-    <thead><tr><th>University</th><th>Fee</th><th>Duration</th><th>NAAC</th><th>WES</th><th>Specs</th><th>Format</th></tr></thead>
-    <tbody><tr class="current-row"><td><span class="cmp-current">● DSU (Exec MBA) (this)</span></td><td class="fee-col">₹2.25L</td><td>17 mo</td><td>A</td><td>No</td><td>11</td><td>Blended</td></tr><tr><td><a href="/universities/manipal/" class="cmp-uni-link">Manipal MUJ</a></td><td class="fee-col">₹1.8L</td><td>24 mo</td><td>A++</td><td class="wes-yes">Yes</td><td>13</td><td>Online</td></tr><tr><td><a href="/universities/amrita/" class="cmp-uni-link">Amrita Vishwa</a></td><td class="fee-col">₹1.7L</td><td>24 mo</td><td>A++</td><td class="wes-yes">Yes</td><td>5</td><td>Online</td></tr><tr><td><a href="/universities/chandigarh/" class="cmp-uni-link">Chandigarh University</a></td><td class="best">₹1.1L</td><td>24 mo</td><td>A+</td><td>No</td><td>8</td><td>Online</td></tr><tr><td><a href="/universities/lpu/" class="cmp-uni-link">LPU</a></td><td class="fee-col">₹1.4L</td><td>24 mo</td><td>A++</td><td>No</td><td>7</td><td>Online</td></tr><tr><td><a href="/universities/amity/" class="cmp-uni-link">Amity Online</a></td><td class="fee-col">₹1.5L</td><td>24 mo</td><td>A+</td><td>No</td><td>10+</td><td>Online</td></tr><tr><td><a href="/universities/jain/" class="cmp-uni-link">Jain University</a></td><td class="fee-col">₹1.4L</td><td>24 mo</td><td>A+++</td><td>No</td><td class="best">26</td><td>Online</td></tr><tr><td><a href="/universities/symbiosis/" class="cmp-uni-link">Symbiosis SSODL</a></td><td class="fee-col">₹3.7L</td><td>24 mo</td><td>A++</td><td>No</td><td>5</td><td>Online</td></tr><tr><td><a href="/universities/dypatil/" class="cmp-uni-link">DY Patil (DPU)</a></td><td class="fee-col">₹1.2L</td><td>24 mo</td><td>A+</td><td>No</td><td>6</td><td>Online</td></tr><tr><td><a href="/universities/liba/" class="cmp-uni-link">LIBA</a></td><td class="fee-col">₹3.5L</td><td>24 mo</td><td>AACSB</td><td class="wes-yes">AIU</td><td>6</td><td>Online</td></tr><tr><td><a href="/universities/bvdu/" class="cmp-uni-link">BVDU</a></td><td class="fee-col">₹1.76L</td><td>24 mo</td><td>A</td><td>No</td><td>7</td><td>Online</td></tr></tbody>
+    <thead><tr><th>University</th><th>Fee</th><th>Duration</th><th>NAAC</th><th>WES</th><th>Specs</th></tr></thead>
+    <tbody><tr class="current-row"><td><span style="color:var(--coral);font-weight:700;">● DSU (Exec MB…</span></td><td style="font-weight:700;color:var(--teal);">₹2.25L</td><td>17 mo</td><td>A</td><td>No</td><td>12</td></tr><tr><td><a href="/universities/manipal/" style="color:var(--teal);font-weight:600;text-decoration:none;">Manipal MUJ</a></td><td style="font-weight:700;color:var(--teal);">₹1.8L</td><td>24 mo</td><td>A++</td><td style="color:var(--success);font-weight:600;">Yes</td><td>13</td></tr><tr><td><a href="/universities/amrita/" style="color:var(--teal);font-weight:600;text-decoration:none;">Amrita Vishw…</a></td><td style="font-weight:700;color:var(--teal);">₹1.7L</td><td>24 mo</td><td>A++</td><td style="color:var(--success);font-weight:600;">Yes</td><td>4</td></tr><tr><td><a href="/universities/chandigarh/" style="color:var(--teal);font-weight:600;text-decoration:none;">Chandigarh U…</a></td><td style="color:var(--coral);font-weight:700;">₹1.1L</td><td>24 mo</td><td>A+</td><td>No</td><td style="color:var(--coral);font-weight:700;">26</td></tr><tr><td><a href="/universities/lpu/" style="color:var(--teal);font-weight:600;text-decoration:none;">LPU</a></td><td style="font-weight:700;color:var(--teal);">₹1.4L</td><td>24 mo</td><td>A++</td><td>No</td><td>7</td></tr><tr><td><a href="/universities/amity/" style="color:var(--teal);font-weight:600;text-decoration:none;">Amity Online</a></td><td style="font-weight:700;color:var(--teal);">₹1.5L</td><td>24 mo</td><td>A+</td><td>No</td><td>18</td></tr><tr><td><a href="/universities/jain/" style="color:var(--teal);font-weight:600;text-decoration:none;">Jain Univers…</a></td><td style="font-weight:700;color:var(--teal);">₹1.4L</td><td>24 mo</td><td>A+++</td><td>No</td><td style="color:var(--coral);font-weight:700;">22</td></tr><tr><td><a href="/universities/symbiosis/" style="color:var(--teal);font-weight:600;text-decoration:none;">Symbiosis SS…</a></td><td style="font-weight:700;color:var(--teal);">₹3.7L</td><td>24 mo</td><td>A++</td><td>No</td><td>9</td></tr><tr><td><a href="/universities/dypatil/" style="color:var(--teal);font-weight:600;text-decoration:none;">DY Patil (DP…</a></td><td style="font-weight:700;color:var(--teal);">₹1.2L</td><td>24 mo</td><td>A+</td><td>No</td><td>15</td></tr><tr><td><a href="/universities/liba/" style="color:var(--teal);font-weight:600;text-decoration:none;">LIBA</a></td><td style="font-weight:700;color:var(--teal);">₹3.5L</td><td>24 mo</td><td>AACSB</td><td style="color:var(--success);font-weight:600;">AIU</td><td>6</td></tr><tr><td><a href="/universities/bvdu/" style="color:var(--teal);font-weight:600;text-decoration:none;">BVDU</a></td><td style="font-weight:700;color:var(--teal);">₹1.76L</td><td>24 mo</td><td>A</td><td>No</td><td>14</td></tr></tbody>
   </table>
 </div>
 <a href="/compare.html" style="display:block;text-align:center;margin-top:0.75rem;font-size:0.78rem;font-weight:600;color:var(--teal);">Full comparison with verdict cards &rarr;</a>
