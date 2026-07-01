@@ -57,5 +57,6 @@
     }
   },
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "_comment": "redeploy"
 }
