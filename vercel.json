@@ -57,18 +57,5 @@
     }
   },
   "cleanUrls": true,
-  "trailingSlash": false,
-  "redirects": [
-    {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "www.onlinembaedu.in"
-        }
-      ],
-      "destination": "https://onlinembaedu.in/:path*",
-      "permanent": true
-    }
-  ]
+  "trailingSlash": false
 }
