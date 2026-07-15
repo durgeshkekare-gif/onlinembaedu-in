@@ -1,6 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <rect width="100" height="100" rx="18" fill="#0D4F5C"/>
-  <text x="50" y="50" dominant-baseline="central" text-anchor="middle"
-    font-family="'Inter','Arial Black',sans-serif" font-weight="800"
-    font-size="28" fill="#FFFFFF">MBA</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#021A2E"/>
+    <stop offset="100%" stop-color="#042840"/>
+  </linearGradient></defs>
+  <rect width="64" height="64" rx="12" fill="url(#g)"/>
+  <!-- Monitor/screen icon -->
+  <rect x="10" y="14" width="44" height="30" rx="4" fill="none" stroke="#0891B2" stroke-width="2.5"/>
+  <rect x="14" y="18" width="36" height="22" rx="2" fill="#0891B2" opacity="0.15"/>
+  <text x="32" y="35" text-anchor="middle" font-family="Arial Black,sans-serif" font-weight="900" font-size="13" fill="#0891B2">MBA</text>
+  <rect x="24" y="44" width="16" height="3" rx="1.5" fill="#0891B2" opacity="0.5"/>
+  <rect x="28" y="47" width="8" height="5" rx="1" fill="#0891B2" opacity="0.4"/>
 </svg>
